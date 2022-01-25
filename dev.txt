@@ -1,0 +1,8 @@
+gbd
+gdb-multiarch 
+xxd
+ldd
+ltrace
+strace
+jq
+qemu

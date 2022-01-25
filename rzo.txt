@@ -1,0 +1,6 @@
+nmap
+net-tools
+tcpdump
+tcpreplay
+dnsutils
+openssl

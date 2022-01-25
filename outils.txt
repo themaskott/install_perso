@@ -1,0 +1,12 @@
+curl
+wget
+git
+fdisk
+fstab
+gzip
+unrar-free
+zip
+nfs-common
+keepass2
+vim
+vim-python-jedi

@@ -1,0 +1,4 @@
+zsh
+terminator
+fonts-powerline
+powerline
