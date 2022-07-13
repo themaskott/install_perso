@@ -8,7 +8,7 @@ PYTHON="python.txt"
 DEV="dev.txt"
 RZO="rzo.txt"
 FORENSIC="forensic.txt"
-NUMIX="theme.txt"
+I3="theme.txt"
 
 PLUS="\033[1;32m+\033[0m"
 MOINS="\033[1;31m-\033[0m"
@@ -54,7 +54,12 @@ echo -e "[$PLUS] Installation d outils forensic"
 apt_install $FORENSIC
 
 echo -e "[$PLUS] Installation du theme"
-apt_install $NUMIX
+apt_install $I3
+cp -r dotfiles/i3 $HOME/.config/
+cp -r dotfiles/rofi $HOME/.config/
+sudo mv /etc/i3status.conf /etc/i3status.conf_bak
+sudo cp i3status.conf /etc/
+
 
 cd $HOME
 
@@ -63,12 +68,7 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 echo -e "[$PLUS] Personnalisation de VIM"
-echo "syntax on" >> $HOME/.vimrc
-echo "set number" >> $HOME/.vimrc
-
-echo "set rtp+=$HOME/.local/lib/python3.9/site-packages/powerline/bindings/vim/" >> $HOME/.vimrc
-echo "set laststatus=2" >> $HOME/.vimrc
-echo "set t_Co=256" >> $HOME/.vimrc
+cp dotfiles/vimrc $HOME/.virmc
 
 echo -e "[$PLUS] Installation de Oh my ZSH"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

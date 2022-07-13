@@ -10,3 +10,5 @@ nfs-common
 keepass2
 vim
 vim-python-jedi
+htop
+locate
