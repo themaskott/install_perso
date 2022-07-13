@@ -1,3 +1,5 @@
 numix-gtk-theme
 numix-icon-theme
 numix-icon-theme-circle
+faba-icon-theme
+fonts-font-awesome

@@ -4,3 +4,4 @@ tcpdump
 tcpreplay
 dnsutils
 openssl
+sshfs
